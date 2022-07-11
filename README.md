@@ -1,2 +1,2 @@
-# Angular-Relative_Navigation
+# Angular-Component-Interaction
 Created with CodeSandbox
