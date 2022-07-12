@@ -12,18 +12,21 @@ export class CardDetailsComponent {
 
   component = "Card Details Component";
   public cardId;
-  user: { id: number; name: string };
+  user: { index: number; name: string };
 
   // FOR ACTIVE ROUTE :
   ngOnInit() {
     this.user = {
-      id: this.route.snapshot.params["id"],
+      index: this.route.snapshot.params["id"],
       name: this.route.snapshot.params["name"]
     };
 
     this.route.paramMap.subscribe((params: ParamMap) => {
       let id = Number(params.get("id"));
       this.cardId = id;
+
+      // this.user.index = params["id"];
+      // this.user.name = params["name"];
     });
   }
 
