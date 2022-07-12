@@ -25,6 +25,7 @@ export class CardComponent {
   // FOR ACTIVE ROUTE :
   public selectedId;
   ngOnInit() {
+    // let id = this.route.snapshot.params["id"];
     this.route.paramMap.subscribe((params: ParamMap) => {
       let id = Number(params.get("id"));
       this.selectedId = id;
