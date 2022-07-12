@@ -30,6 +30,7 @@ export class CardDetailsComponent {
     });
   }
 
+  // NAVIGATION DOESNOT KNOW WE ARE ON WHICH ROUTER LINK
   goPrevious() {
     let previousId = this.cardId - 1;
     // this.router.navigate(["/card", previousId]);

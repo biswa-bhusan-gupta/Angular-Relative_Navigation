@@ -8,7 +8,13 @@ import { Component } from "@angular/core";
       {{ component }}
     </h1>
     <nav>
-      <a routerLink="/test" routerLinkActive="active">Test</a>
+      <a
+        routerLink="/test"
+        routerLinkActive="active"
+        [queryParams]="{ abc: '1' }"
+        fragment="loading"
+        >Test</a
+      >
       <br />
       <a routerLink="/card-list" routerLinkActive="active">Card</a>
     </nav>
